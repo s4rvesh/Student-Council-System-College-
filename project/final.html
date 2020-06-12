@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>Sinhgad Student Council</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+<center><img src="unnamed.png" alt="Sinhgad" style="width:200px;height:228px;"></center>
+  <h3 class="w3-bar-item" style="color:gray"><center>Content</h3></center>
+  <a href="home.html" class="w3-bar-item w3-button"><center>Home</center></a>
+  <a href="contactus.html" class="w3-bar-item w3-button"><center>Contact</center></a>
+  <a href="dashboard.html" class="w3-bar-item w3-button"><center>Admin Login</center></a>
+<a href="index.php" class="w3-bar-item w3-button"><center>Student Login</center></a>
+<a href="#" class="w3-bar-item w3-button"><center>About</center></a>
+</div>
+
+<div zclass="w3-main" id="main">
+
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <center><h1><b>Sinhgad Student Council</b></h1></center>
+  </div>
+</div>
+
+<img src="2.jpg" alt="Car" style="width:100%">
+
+<div class="w3-container">
+<section>
+<h3>Sinhgad Student Council</h3>
+<p>Sinhgad Student Council is an association with a perfect blend of clubs to produce competent students to face the newer challenges of today's globalized world through holistic development.</p>
+<p>This council provides a platform for students to support, share and excel in potential qualities.<p>
+<p>This association includes various clubs.</p>
+</section>
+<section>
+<h3>Sinhgad Student Council Clubs</h3>
+<p>Sinhgad student council conatains various clubs shown below<p>
+<ul>
+<li><a href="w2.html"class="w3-bar-item w3-button w3-theme-l1">Alumni</a><br></li>
+<li><a href="w3.html"class="w3-bar-item w3-button w3-theme-l1">Engineering</a><br></li>
+<li><a href="w4.html" class="w3-bar-item w3-button w3-theme-l1">Foreign Students</a><br></li>
+<li><a href="w5.html" class="w3-bar-item w3-button w3-theme-l1">Management</a><br></li>
+<li><a href="w6.html" class="w3-bar-item w3-button w3-theme-l1">Placement</a><br></li>
+<li><a href="w7.html" class="w3-bar-item w3-button w3-theme-l1">Reserch</a><br></li>
+<li><a href="w8.html" class="w3-bar-item w3-button w3-theme-l1">Science</a><br></li>
+<li><a href="w9.html" class="w3-bar-item w3-button w3-theme-l1">Social media & pr</a><br></li>
+<li><a href="w10.html" class="w3-bar-item w3-button w3-theme-l1">Student welfare</a></li>
+</ul>
+</section>
+
+</div>
+<div class="w3-teal w3-padding-16">
+<center><footer><b>Copyright &copy; Sinhgad Student Council</b></footer></center>
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
+

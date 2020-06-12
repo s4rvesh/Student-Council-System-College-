@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sinhgad Student Council</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+ <center><img src="unnamed.png" alt="Sinhgad" style="width:200px;height:228px;"></center>
+  <h3 class="w3-bar-item" style="color:gray"><center>Content</h3></center>
+  <a href="#" class="w3-bar-item w3-button"><center><h4>Home</h4></center></a>
+  <a href="#" class="w3-bar-item w3-button"><center><h4>Contact</h4></center></a>
+  <a href="#" class="w3-bar-item w3-button"><center><h4>Admin Login</h4></center></a>
+<a href="#" class="w3-bar-item w3-button"><center><h4>Stduent Login</h4></center></a>
+<a href="#" class="w3-bar-item w3-button"><center><h4>About</h4></center></a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+
+<div class="w3-container w3-teal">
+  <h1><center><b>Sinhgad Student Council</center></b></h1>
+</div><br>
+
+<!--<img src="img_car.jpg" alt="Car" style="width:100%">-->
+<!--<h2 class="w3-center">Slideshow</h2>-->
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="4.jpg" style="width:100%">
+  <img class="mySlides" src="6.jpg" style="width:100%">
+  <img class="mySlides" src="8.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<div class="w3-container">
+<section><br>
+<h3>Sinhgad Student Council</h3>
+<p>Sinhgad Student Council is an association with a perfect blend of clubs to produce competent students to face the newer challenges of today's globalized world through holistic development.</p>
+<p>This council provides a platform for students to support, share and excel in potential qualities.<p>
+<p>This association includes various clubs.</p>
+</section>
+<section>
+<h3>Sinhgad Student Council Clubs</h3>
+<p>Sinhgad student council conatains various clubs shown below<p>
+<ul>
+<li><a href="w2.html"class="w3-bar-item w3-button w3-theme-l1">Alumni</a><br></li>
+<li><a href="w3.html"class="w3-bar-item w3-button w3-theme-l1">Engineering</a><br></li>
+<li><a href="w4.html" class="w3-bar-item w3-button w3-theme-l1">Foreign Students</a><br></li>
+<li><a href="w5.html" class="w3-bar-item w3-button w3-theme-l1">Management</a><br></li>
+<li><a href="w6.html" class="w3-bar-item w3-button w3-theme-l1">Placement</a><br></li>
+<li><a href="w7.html" class="w3-bar-item w3-button w3-theme-l1">Reserch</a><br></li>
+<li><a href="w8.html" class="w3-bar-item w3-button w3-theme-l1">Science</a><br></li>
+<li><a href="w9.html" class="w3-bar-item w3-button w3-theme-l1">Social media & pr</a><br></li>
+<li><a href="w10.html" class="w3-bar-item w3-button w3-theme-l1">Student welfare</a></li>
+</ul>
+</ul>
+</section>
+<div class="w3-container  w3-teal">
+<center><footer>Copyright &copy; Sinhgad Student Council</footer></center>
+</div>
+</div>
+
+</div>
+      
+</body>
+</html>
+

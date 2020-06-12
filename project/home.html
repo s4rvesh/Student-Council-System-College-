@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<head>
+<title>My First Webpage</title>
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+<section>
+<div class="w3-teal">
+<h1><center>Sinhgad Institutes</center></h1>
+</div>
+</section>
+
+<!--<h2 class="w3-center">My Slidshow</h2>-->
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="karandak.jpg" style="width:100%">
+  <img class="mySlides" src="elect.jpg" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="4.jpg" style="width:100%">
+  
+  
+  <img class="mySlides" src="6.jpg" style="width:100%">
+  <img class="mySlides" src="1.jpg" style="width:100%">
+  
+  <img class="mySlides" src="8.jpg" style="width:100%">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+<div class="w3-teal w3-padding-16">
+<center><footer>Copyright &copy; Sinhgad Student Council</footer></center>
+</div>
+<section>
+<a href="final.html"><b><h3 style="color:blue;">Sinhgad Student Council</h3></b></a>
+</section>
+
+</body>
+</html>
